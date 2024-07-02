@@ -32,10 +32,16 @@ $ streamlit run main.py --port 8501
 ```
 docker build -t streamlitstarter:v1 .
 
+docker images
 
+docker run -p 8501:8501 streamlitstarter:v1
 
 ```
+To view your app, users can browse to http://0.0.0.0:8501 or http://localhost:8501
 
+
+## Reference 
+- https://docs.streamlit.io/deploy/tutorials/docker
 
 
 
