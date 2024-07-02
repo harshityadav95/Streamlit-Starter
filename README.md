@@ -37,6 +37,8 @@ To view your app, users can browse to http://0.0.0.0:8501 or http://localhost:85
 
 ## Reference 
 - https://docs.streamlit.io/deploy/tutorials/docker
+- https://hackmd.io/@maelvls/fixing-403-forbidden-ghcr
+
 
 
 
