@@ -1,0 +1,2 @@
+#Github Action to Build the container  image and upload image to to github package of the same repository where the action is running
+
