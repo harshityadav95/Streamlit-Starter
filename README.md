@@ -1,8 +1,3 @@
-# Streamlit-Starter
-Starter Templete repository
-
-## Streamlit Starter Templete 
-
 ## Setting up Virtual Environment
 ```
 $ pip install virtualenv
