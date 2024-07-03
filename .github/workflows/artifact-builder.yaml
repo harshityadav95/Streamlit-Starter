@@ -3,7 +3,7 @@ name: Build and Push Docker Image
 on:
   push:
     branches:
-      - Action_Deployment  # You can change this to the branch you want to trigger the action
+      - main  # You can change this to the branch you want to trigger the action
 
 jobs:
   build-and-push:
