@@ -23,29 +23,27 @@ $ pyenv --version
 $ pyenv install --list
 
 # Install python version
-$pyenv install 3.12.0
+$ pyenv install 3.12.0
 
 # Setpyenv version
-$python global 3.12.0
-$python local 3.12.0
-$python shell 3.12.0
+$ pyenv global 3.12.0
+$ pyenv local 3.12.0
+$ pyenv shell 3.12.0
 
 # Install  pip
-$python -m pip install --upgrade pip
+$ python -m pip install --upgrade pip
 
-
-
-```
+# Install virtualenv
 $ pip install virtualenv
 $ python -m venv venv
-
-# Activate virtualenv
+```
+### Activate virtualenv
 ```
 #Windows
 $ env/Scripts/activate
 
-#Linux
-$ source  env/bin/activate
+#Linux/Unix
+$ source venv/bin/activate
 
 # Install dependencies
 $ pip install -r requirements.txt
@@ -78,8 +76,6 @@ To view your app, users can browse to http://0.0.0.0:8501 or http://localhost:85
 ## Build Using Poadman Locally
 ```
 podman build -t streamlit starter -f Dockerfile .
-
-
 ```
 
 
