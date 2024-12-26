@@ -6,21 +6,21 @@
 # Install Pyenv Dependency
 $sudo apt install -y make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev
 
-# Setup pyenv
-$curl https://pyenv.run | bash
+$ curl https://pyenv.run | bash
 
-# For ZSH user
-$echo -e 'export PYENV_ROOT="$HOME/.pyenv"\nexport PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc
-$echo -e 'eval "$(pyenv init --path)"\neval "$(pyenv init -)"' >> ~/.bashrc
+# For Bash
+echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
+echo '[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc
+echo 'eval "$(pyenv init - bash)"' >> ~/.bashrc
 
 # Refreshing the Shell
-$exec "$SHELL"
+$ exec "$SHELL"
 
 # Check pyenv version
-$pyenv --version
+$ pyenv --version
 
 # View available python version
-$pyenv install --list
+$ pyenv install --list
 
 # Install python version
 $pyenv install 3.12.0
